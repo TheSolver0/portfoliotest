@@ -1,0 +1,113 @@
+body
+{
+    /* background: #F0F0F6; */
+    /* color: #44566C; */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(100deg,#37214d,#f19419,#36bbf5) ;
+}
+.container
+{
+    position: absolute;
+    margin: 50px;
+    padding: 20px;
+    border-radius: 1rem;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 4px 8px #37214de2;
+    max-width: 1000px;
+    width: 100%;
+    /* color: white; */
+}
+#imagePers
+{
+    object-fit: contain;
+    clip-path: circle();
+    max-width: 23%;
+    float: left;
+}
+.imageNom
+{
+    margin-left: 100px;
+}
+.about
+{
+    padding-left: 10px;
+}
+.texte
+{
+    position: relative;
+    left: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.texte p
+{
+    padding: 10px;
+    margin-right: 20px;
+}
+.categorie
+{
+    display: flex;
+    flex-flow: row wrap;
+}
+.cate
+{
+    position: relative;
+    left: -20px;
+    padding: 50px 25px 50px 25px;
+    clip-path: circle();
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+.foot
+{
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(100deg,#37214d,#f19419,#36bbf5) ;
+    /* background: #F8FAFB; */
+    width: 103%;
+    height: 100px;
+    margin: -20px;
+    margin-top: 15px;
+    padding: 10px;
+    color: white;
+}
+.nav
+{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    margin-left: 340px;
+    padding-bottom: 65px;
+    list-style: none;
+    color: #37214d;
+}
+.nav a
+{
+    padding-right: 100px;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+.nav li:hover
+{
+    color: #f19419;
+    border-bottom: 5px solid #f19419;
+}
+.scroll-animation {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+  
+.scroll-animation.show {
+    opacity: 1;
+}
